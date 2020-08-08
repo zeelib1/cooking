@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Static Template</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="index.css" />
+
+
+  </head>
+
+  <body id="background">
+  <header>
+
+    <div class="heading">
+      <img class="logo" src="Assets/hat.svg" alt="" width="130px" height="160px;">
+      <h1>Clean code clean eat!</h1>
+      <img class="cook" src="Assets/vegeta.svg" alt="" width="140px" height="170px">
+
+    </div>
+
+
+    <nav>
+    <ul class="flex-container-navbar">
+      <li><a href="">Home <i class="fa fa-home" style="font-size:36px"></i></a></li>
+      <li><a href="">History <i class="fa fa-history" aria-hidden="true" style="font-size:36px"></i></a></li>
+      <li><a href="">Cooking Book <i style="font-size:36px" class="fa">&#xf02d;</i></a></li>
+      <!-- <li><a href="">Cooking Book <i class="fas fa-cookie-bite" style="font-size:36px"></i></a></li> -->
+
+    </ul>
+    </nav>
+
+  </header>
+<!-- #######MAIN SECTION -->
+<main >
+
+<sidebar>
+    <div class="recipe-sidebar" id="recipe-responsive-grid">
+
+      <div class="card-container card-container-one">
+        <div class="card-dish-picture">
+          <img src="https://kochhochgenuss.de/wp-content/uploads/2018/07/B1E42DA2-A317-4A27-8967-F901E256FFFA-1440x1535.jpeg"/></div>
+        <div class="card-info">
+          <div class="card-profile-picture"><img src="./Assets/Thomas_square.jpg" /></div>
+          <h3 class="media-size-small">Veggie Gnocchi</h3>
+          <h5>by Thomas</h5>
+        </div>
+      </div>
+
+      <div class="card-container card-container-two">
+        <div class="card-dish-picture">
+          <img src="https://omnivorescookbook.com/wp-content/uploads/2019/08/1908_Salmon-Poke-Bowl_005.jpg"/>
+        </div>
+        <div class="card-info">
+          <div class="card-profile-picture"><img src="./Assets/Natascha_square.jpg" /></div>
+          <h3 class="media-size-small">Bowl</h3>
+          <h5>by Natascha</h5>
+        </div>
+      </div>
+
+      <div class="card-container " id="lasagne-sidebar">
+        <div class="card-dish-picture ">
+          <img src="https://www.tegut.com/fileadmin/tegut_upload/Rezepte/Lasagne-al-Forno-1920x1080.png"/>
+        </div>
+        <div class="card-info">
+          <div class="card-profile-picture"><img src="./Assets/Zvonimir_square.jpg" /></div>
+          <h3 class="media-size-small" >Lasagne</h3>
+          <h5>by Zvonimir</h5>
+        </div>
+      </div>
+      <img src="Assets/chop.svg" alt="" width="300px" height="300px" id="saying" style="opacity:0.6">
+    </div>
+
+    </div>
+    </sidebar>
+
+    <!--<div class="recipe-site">
+      <div class="recipe-list">
+        <div class="recipe-one">
+          <div class="one-image"></div>
+          <div class="one-title">One</div>
+        </div>
+        <div class="recipe-two">
+          <div class="two-image"></div>
+          <div class="two-title">Two</div>
+        </div>
+        <div class="recipe-three">
+          <div class="three-image"></div>
+          <div class="three-title">Three</div>
+        </div>
+      </div>-->
+
+      <div class="recipe-main" id="recipe-main-id">
+
+        <h1>Hungry fella'?</h1>
+        <h3>Homemade stuff, ready for You...</h3>
+
+        <div class="recipe-title">
+          <img src="Assets/cook.svg" alt="">
+          <div class="showing-recipe" id="showing-recipe">
+            <div class="lasagne-recipe" id="lasagne">
+              <h4>Classic Lasagne</h4><span ><a href="" target="_parent"  onclick="history.go(-1)" style="color:rgb(18, 68, 98);" ><i class="fa fa-arrow-circle-left" id="backIcon"  style="font-size:36px" ></i></a><span>
+              <p>Prepare this easy lasagne ahead of time and save in the freezer, uncooked, for when you need it during a busy week. Then just bake for an extra 45 mins</p>
+              <ul>
+                <li>To make the meat sauce, heat 2 tbsp olive oil in a frying pan and cook 750g lean beef mince in two batches for about 10 mins until browned all over.</li>
+                <li>Finely chop 4 slices of prosciutto from a 90g pack, then stir through the meat mixture.</li>
+                <li>Pour over 800g passata or half our basic tomato sauce recipe and 200ml hot beef stock. Add a little grated nutmeg, then season.</li>
+                <li>Bring up to the boil, then simmer for 30 mins until the sauce looks rich.</li>
+                <li>Heat oven to 180C/fan/160C/gas 4 and lightly oil an ovenproof dish (about 30 x 20cm).</li>
+              </ul>
+            </div>
+
+            <!-- ################ -->
+
+            <div class="lasagne-recipe" id="firstMenu">
+              <h4>What's for menu?</h4>
+              <p>Check our lovely choice and pick your favorite meal</p>
+              <ul>
+                <li>Make it tasty!</li>
+                <li>Make it delicious!</li>
+                <li>Call some friends!</li>
+                <li>Grab some patience...</li>
+                <li>And we're off to go!!!</li>
+              </ul>
+            </div>
+
+
+          </div>
+
+        <!-- <div class="recipe-description">
+          <h2>A red whine would fit perfectly!</h2>
+        </div>
+        <div class="recipe-picture">Picture</div> -->
+
+
+    </main>
+    <!-- <div class="table-container">
+
+       <div class="table-responsive table-responsive{-sm|-md|-lg|-xl} table-all">
+
+          <h3 id="ingredients">Ingredients:</h3>
+
+      <table class="table table-hover">
+        <thead class="thead-dark">
+        <tr>
+          <th> <button id="download"><i class="fa fa-download" style="font-size:36px"></i></button></th>
+          <th>Amount</th>
+          <th>What you need</th>
+        </tr>
+      </thead>
+
+      <tbody class="table-striped">
+        <tr>
+          <td rowspan="8" class="part">Sauce</td>
+          <td>4 tablespoon</td>
+          <td>Soy sauce</td>
+        </tr>
+        <tr>
+          <td>2 tablespoon</td>
+          <td>Rice vinegar</td>
+        </tr>
+        <tr>
+          <td>2 tablespoon</td>
+          <td>Sriracha</td>
+        </tr>
+        <tr>
+          <td>2 tablespoon</td>
+          <td>Maple syrup</td>
+        </tr>
+        <tr>
+          <td>2 tablespoon</td>
+          <td>sesame oil</td>
+        </tr>
+        <tr>
+          <td>2 cloves</td>
+          <td>Garlic</td>
+        </tr>
+        <tr>
+          <td>2 tablespoon</td>
+          <td>Ginger</td>
+        </tr>
+        <tr>
+          <td>1/2 tablespoon</td>
+          <td>Salt</td>
+        </tr>
+
+        <tr>
+          <td rowspan="3" class="part">Bowl</td>
+          <td>1 pound</td>
+          <td>Sashimi-grade salmon</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Green onions</td>
+        </tr>
+        <tr>
+          <td>4 cups</td>
+          <td>Sushi rice</td>
+        </tr>
+
+        <tr>
+          <td rowspan="5" class="part">Toppings (optional)</td>
+          <td>1 cup</td>
+          <td>Edamame</td>
+        </tr>
+        <tr>
+          <td>2 cups</td>
+          <td>salad greens</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>Avocado</td>
+        </tr>
+        <tr>
+          <td>As much you like</td>
+          <td>Toasted sesame seeds</td>
+        </table>
+      </tbody>
+
+    </div>
+    </div> -->
+
+    <footer>
+
+    </footer>
+
+
+
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,592 @@
+:root {
+  font-size: calc(0.5em + 1vw);
+  box-sizing: border-box;
+  font-family: "Cookie", cursive;
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+
+#background {
+  background-image: url("./Assets/bigbg.jpg") !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  width: auto;
+  height: auto;
+  overflow-x: hidden;
+
+
+}
+#saying {
+  display: none;
+}
+
+
+header {
+  font-family: Cookie;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 20%;
+  background-color: #43b46e;
+  filter: drop-shadow(30px 4px 4px #43b46e);
+
+
+}
+@media (max-width:1142px) {
+  header {
+    flex-direction: column;
+  }
+  .heading h1 {
+  margin-left: 1em;
+  margin-right: 1em;
+  }
+  .flex-container-navbar li{
+  margin-left: 2em;
+  }
+}
+@media(max-width:1202px) {
+  .recipe-title img{
+    display:none;
+  }
+  .recipe-title .lasagne-recipe h4 {
+    font-size: 3.6rem;
+    margin-top: -2em;
+  }
+  .recipe-title .lasagne-recipe p{
+    font-size: 2rem;
+  }
+
+    .recipe-title .lasagne-recipe ul li {
+      font-size: 2rem;
+    }
+
+}
+
+@media (max-width:897px) {
+
+  .recipe-title .lasagne-recipe h4 {
+    font-size: 3.6rem;
+    margin-top: -2em;
+  }
+    .recipe-title .lasagne-recipe ul li {
+      font-size: 2rem;
+    }
+
+}
+
+@media (max-width:839px) {
+  main {
+    flex-direction: column-reverse;
+
+  }
+  .recipe-main {
+    margin-left: 3em;
+  }
+
+  #recipe-responsive-grid {
+    margin-top: 1.5em;
+    display: grid;
+    margin-right: 1.5em;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+
+
+
+  }
+
+  @media (max-width:793px) {
+    #recipe-responsive-grid {
+      grid-template-columns:1fr 1fr;
+      margin-left: 4em;
+      justify-content: space-between;
+
+    }
+
+    #saying {
+      display: inline;
+    }
+    .table-container {
+      display: flex;
+      margin-top: 10em;
+      margin-right: 12em;
+      margin-left: -11em;
+
+
+    }
+  }
+
+  @media (max-width:629px) {
+    #recipe-responsive-grid {
+      grid-template-columns:repeat(auto-fit, minmax(200px,1fr));
+      margin-left: 4em;
+      justify-content: space-between;
+      align-items: center;
+
+    }
+
+    .showing-recipe #lasange {
+      /* margin-top: 10em; */
+    }
+
+    @media (max-width:435px){
+      #recipe-responsive-grid .card-container {
+        grid-template-columns:1fr !important;
+        margin-left: 4em;
+        justify-content: space-between;
+
+      }
+      .showing-recipe #lasange {
+        /* margin-top: 10em; */
+      }
+    }
+    /* main {
+      display: flex;
+      flex-direction: column-reverse;
+      flex-wrap: wrap;
+    } */
+
+    #saying {
+      display: none;
+    }
+  }
+
+
+
+
+  .recipe-title .lasagne-recipe h4 {
+    font-size: 2.6rem;
+    margin-top: 0.75em;
+  }
+    .recipe-title .lasagne-recipe ul li {
+      font-size: 2rem;
+    }
+    .recipe-sidebar{
+      width:100%;
+
+      margin-left: -1.6em;
+
+
+    }
+    #lasagne h4 {
+      margin-top: 10em;
+    }
+
+
+
+}
+
+
+
+
+
+
+
+.heading {
+  display: flex;
+  align-items: center;
+
+
+
+
+}
+
+.heading h1 {
+  color:white;
+  margin-left: 0.875em;
+
+
+
+}
+
+.heading .logo {
+margin-left: 0.3em;
+
+}
+
+.heading .cook {
+
+}
+nav {
+  margin-left: auto;
+}
+
+.flex-container-navbar {
+  display: flex;
+  list-style: none;
+
+
+}
+
+.flex-container-navbar li a {
+  text-decoration: none;
+  margin-right: 1.7em;
+  color:white;
+  font-size: 1.8em;
+
+
+}
+
+/* ##############################MAIN########################################################## */
+
+main {
+  display: flex;
+  justify-content: space-around;
+
+
+}
+
+
+
+
+.showing-recipe {
+
+  width: 50vw;
+  height: 50vh;
+  margin-left: 1em;
+
+}
+#lasagne {
+  display: none;
+  font-family: Cookie;
+  font-size: 1.2rem;
+
+}
+
+.lasagne-recipe {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  object-fit: cover;
+  font-size: 1rem;
+  line-height: 1.5em;
+  filter: drop-shadow(30px 10px 4px #43b46e);
+}
+.lasagne-recipe ul li {
+
+}
+
+.lasagne-recipe h4 {
+  font-family: Cookie;
+  font-size: 1.8rem;
+  letter-spacing: 0.25em;;
+}
+.lasagne-recipe p, ul {
+  font-family: Cookie;
+  font-size: 1.5rem;
+}
+
+.lasagne-recipe ul li {
+  margin-top: 0.35em;
+}
+
+.recipe-list {
+  width: 20%;
+  height: 700px;
+  background: yellow;
+}
+
+.recipe-main {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+
+.recipe-main h1 {
+  color:#124462;
+  text-align: center;
+  font-size: 7rem;
+  font-family: Cookie, cursive;
+}
+
+.recipe-main h3 {
+  color:#43b46e;
+  text-align: center;
+  font-size: 4rem;
+
+  font-family: Cookie, cursive;
+
+}
+
+.recipe-title {
+  height: 50%;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+
+
+}
+@media (max-width:775px) {
+  .recipe-title img {
+    display: none;
+  }
+  .showing-recipe {
+    margin-top: 0;
+    margin-right: 1em;
+    text-align: justify;
+  }
+  .lasagne-recipe {
+    margin-top: 0;
+  }
+
+}
+.recipe-title img {
+  background-position: center;
+  background-size: cover;
+  width: 40%;
+  height:100%;
+  object-fit: cover;
+  text-align: center;
+  opacity: 0.5;
+  /* filter: grayscale(66%); */
+}
+
+.recipe-description {
+  width: 100%;
+  height: 20%;
+  background: green;
+}
+
+.recipe-picture {
+  width: 100%;
+  height: 40%;
+  background: red;
+}
+
+.recipe-ingredients {
+  width: 100%;
+  height: 20%;
+  background: lightsalmon;
+}
+
+.part {
+  text-align: center;
+  font-weight: bold;
+  background-color: lightgray;
+}
+
+
+
+/*begin of sidebar css*/
+
+.recipe-sidebar {
+  width: 230px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.card-container {
+  background-color: #9fbdd3;
+  width: 200px;
+  height: 300px;
+  /*width: 90%;
+  min-height: 550px;*/
+  border-radius: 1em;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+  margin: 2.5em;
+  transition: 0.3s;
+  transform: scale(1);
+  display: flex;
+  flex-direction: column;
+
+}
+
+.card-container:hover {
+  transition: 0.3s;
+  transform: scale(1.13);
+}
+
+.card-dish-picture {
+  flex: 3 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-y: hidden;
+}
+
+.card-dish-picture img {
+  /* flex-shrink: 0; */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-top-left-radius: 1em;
+  border-top-right-radius: 1em;
+
+}
+
+.card-info {
+  flex: 1 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.card-info h3 {
+  margin-top: 2.35em;
+  font-size: 0.875rem;
+  font-weight: bold;
+  color:black;
+
+}
+
+.card-info h5 {
+font-size: 1rem;
+}
+
+
+
+.card-profile-picture {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  position: absolute;
+  top: -35px;
+  transform: translateX(-50%);
+  left: 50%;
+}
+
+.card-profile-picture img {
+  flex-shrink: 0;
+  width: 80px;
+  height: 80px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+}
+
+h3,
+h5 {
+  text-align: center;
+
+}
+
+/*end of sidebar css*/
+
+/*.recipe-site {
+  display: flex;
+  flex-direction: row;
+}
+
+.recipe-one {
+  height: 33%;
+  width: 100%;
+  background: palevioletred;
+}
+
+.one-image {
+  height: 70%;
+  background: darkorchid;
+}
+
+.one-title {
+  height: 30%;
+  background: darkorange;
+}
+
+.recipe-two {
+  height: 33%;
+  width: 100%;
+  background: lightgray;
+}
+
+.two-image {
+  height: 70%;
+  background: darkorchid;
+}
+
+.two-title {
+  height: 30%;
+  background: darkorange;
+}
+
+.recipe-three {
+  height: 34%;
+  width: 100%;
+  background: purple;
+}
+
+.three-image {
+  height: 70%;
+  background: darkorchid;
+}
+
+.three-title {
+  height: 30%;
+  background: darkorange;
+}*/
+
+.table-container {
+  display: flex;
+  margin-right: 10em;
+
+}
+@media(max-width:995px) {
+  .table-container {
+    display: flex;
+    margin-right: 12em;
+    margin-left: -8em;
+
+
+  }
+}
+
+.responsiveTable{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.table-all {
+
+  width: 50%;
+  margin-left: 100px;
+  margin-left: 400px;
+  margin-bottom: 30px;
+  border-color: gray;
+  border-style: solid;
+}
+
+th {
+  font-size: 20px;;
+  width: 50px;
+}
+
+td {
+  min-width: 70px;
+  background-color: transparent;
+}
+
+tr i {
+  margin-left: 10px;
+}
+
+#ingWrapper {
+  text-align: center;
+}
+
+#ingredients {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+#download{
+  cursor: pointer;
+  margin-left: 30%;
+}
