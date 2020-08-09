@@ -6,12 +6,16 @@ lasagneRecipe.addEventListener('click', function(){
   lasagne.style.display = 'block';
   firstMenu.style.display = "none";
   bowl.style.display = 'none';
+  var zeeTable = document.getElementById('table-wrapper-two');
+  zeeTable.style.display = 'block';
+
+
 })
 
 
 var bowlRecipe = document.getElementById ('bowl-sidebar');
 var bowl = document.getElementById('bowl');
-var ingBowl = document.getElementById('table-wrapper')
+var ingBowl = document.getElementById('table-wrapper');
 bowlRecipe.addEventListener('click', function(){
   bowl.style.display = 'block';
   firstMenu.style.display = "none";
