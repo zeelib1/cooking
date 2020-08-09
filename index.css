@@ -511,23 +511,22 @@ h5 {
   margin-left: 10em;
 }
 
-@media(max-width:995px) {
+/* @media(max-width:995px) {
   .table-container {
     display: flex;
     margin: 0 auto;
   }
-}
+} */
 
 .table-all {
-  width: 55%;
-  margin-left: 100px;
-  border-color: gray;
   display: flex;
+  width: 60%;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   font-family: Cookie;
 }
+
 
 th {
   font-size: 30px;
@@ -564,5 +563,29 @@ tr i {
 }
 
 table.table-hover tbody tr td:hover {
-  background-color: grey;
+  background-color: grey; 
+}
+
+@media
+only screen and (max-width: 760px), (min-device-width: 768px) and (max-device-width: 1024px){
+  #table-wrapper, .table-content, table, thead, tbody, th, td, tr {
+    display: block;
+    width: 6em;
+  }
+
+  thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+
+  td {
+    position: relative;
+    padding-left: 50%;
+    width: 8.2em;
+  }
+
+  #ingredients {
+    margin: 0 auto;
+  }
 }
