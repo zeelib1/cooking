@@ -237,11 +237,7 @@ nav {
 main {
   display: flex;
   justify-content: space-around;
-
-
 }
-
-
 
 
 .showing-recipe {
@@ -255,7 +251,16 @@ main {
   display: none;
   font-family: Cookie;
   font-size: 1.2rem;
+}
 
+#bowl {
+  display: none;
+  font-family: Cookie;
+  font-size: 1.2rem;
+}
+
+#full-table-bowl{
+  display: none;
 }
 
 .lasagne-recipe {
