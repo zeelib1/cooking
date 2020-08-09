@@ -505,25 +505,24 @@ h5 {
 .table-container {
   display: flex;
   margin-left: 10em;
+  margin-right: 10em;
 } 
 
-@media(max-width:995px) {
+/* @media(max-width:995px) {
   .table-container {
     display: flex;
     margin: 0 auto;
   }
-}
+} */
 
 .table-all {
-  width: 55%;
-  margin-left: 100px;
-  border-color: gray;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   font-family: Cookie;
 }
+
 
 th {
   font-size: 30px;
