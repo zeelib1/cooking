@@ -11,7 +11,7 @@ lasagneRecipe.addEventListener('click', function(){
 
 var bowlRecipe = document.getElementById ('bowl-sidebar');
 var bowl = document.getElementById('bowl');
-var ingBowl = document.getElementById('full-table-bowl')
+var ingBowl = document.getElementById('table-wrapper')
 bowlRecipe.addEventListener('click', function(){
   bowl.style.display = 'block';
   firstMenu.style.display = "none";

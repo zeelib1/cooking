@@ -181,32 +181,18 @@ header {
 
 }
 
-
-
-
-
-
-
 .heading {
   display: flex;
   align-items: center;
-
-
-
-
 }
 
 .heading h1 {
   color:white;
   margin-left: 0.875em;
-
-
-
 }
 
 .heading .logo {
 margin-left: 0.3em;
-
 }
 
 .heading .cook {
@@ -536,6 +522,10 @@ h5 {
   background: darkorange;
 }*/
 
+#table-wrapper {
+  display: none;
+}
+
 .table-container {
   display: flex;
   margin-right: 10em;
@@ -546,8 +536,6 @@ h5 {
     display: flex;
     margin-right: 12em;
     margin-left: -8em;
-
-
   }
 }
 
@@ -558,7 +546,6 @@ h5 {
 }
 
 .table-all {
-
   width: 50%;
   margin-left: 100px;
   margin-left: 400px;
@@ -568,17 +555,20 @@ h5 {
 }
 
 th {
-  font-size: 20px;;
+  font-size: 20px;
   width: 50px;
+  background-color: #9fbdd3;
 }
 
 td {
   min-width: 70px;
+  max-height: 40px;
   background-color: transparent;
 }
 
 tr i {
   margin-left: 10px;
+  width: 30px;
 }
 
 #ingWrapper {
