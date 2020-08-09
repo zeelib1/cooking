@@ -95,9 +95,6 @@ header {
     margin-right: 1.5em;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto;
-
-
-
   }
 
   @media (max-width:793px) {
@@ -105,7 +102,6 @@ header {
       grid-template-columns:1fr 1fr;
       margin-left: 4em;
       justify-content: space-between;
-
     }
 
     #saying {
@@ -116,8 +112,6 @@ header {
       margin-top: 10em;
       margin-right: 12em;
       margin-left: -11em;
-
-
     }
   }
 
@@ -156,9 +150,6 @@ header {
     }
   }
 
-
-
-
   .recipe-title .lasagne-recipe h4 {
     font-size: 2.6rem;
     margin-top: 0.75em;
@@ -176,9 +167,6 @@ header {
     #lasagne h4 {
       margin-top: 10em;
     }
-
-
-
 }
 
 .heading {
@@ -205,8 +193,6 @@ nav {
 .flex-container-navbar {
   display: flex;
   list-style: none;
-
-
 }
 
 .flex-container-navbar li a {
@@ -214,8 +200,6 @@ nav {
   margin-right: 1.7em;
   color:white;
   font-size: 1.8em;
-
-
 }
 
 /* ##############################MAIN########################################################## */
@@ -260,9 +244,6 @@ main {
   line-height: 1.5em;
   filter: drop-shadow(30px 10px 4px #43b46e);
 }
-.lasagne-recipe ul li {
-
-}
 
 .lasagne-recipe h4 {
   font-family: Cookie;
@@ -301,9 +282,7 @@ main {
   color:#43b46e;
   text-align: center;
   font-size: 4rem;
-
   font-family: Cookie, cursive;
-
 }
 
 .recipe-title {
@@ -313,11 +292,8 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-
-
-
-
 }
+
 @media (max-width:775px) {
   .recipe-title img {
     display: none;
@@ -522,48 +498,41 @@ h5 {
   background: darkorange;
 }*/
 
-#table-wrapper {
+#table-wrapper{
   display: none;
 }
 
 .table-container {
   display: flex;
-  margin-right: 10em;
+  margin-left: 10em;
+} 
 
-}
 @media(max-width:995px) {
   .table-container {
     display: flex;
-    margin-right: 12em;
-    margin-left: -8em;
+    margin: 0 auto;
   }
 }
 
-.responsiveTable{
-  display:flex;
+.table-all {
+  width: 55%;
+  margin-left: 100px;
+  border-color: gray;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-
-.table-all {
-  width: 50%;
-  margin-left: 100px;
-  margin-left: 400px;
-  margin-bottom: 30px;
-  border-color: gray;
-  border-style: solid;
+  font-family: Cookie;
 }
 
 th {
-  font-size: 20px;
-  width: 50px;
+  font-size: 30px;
   background-color: #9fbdd3;
 }
 
 td {
-  min-width: 70px;
-  max-height: 40px;
-  background-color: transparent;
+  font-size: 22px;
+  background-color: white;
 }
 
 tr i {
@@ -579,9 +548,17 @@ tr i {
   padding-top: 10px;
   padding-bottom: 10px;
   text-align: center;
+  font-size: 40px;
+  text-decoration: underline;
+  color: #124462;
+  font-family: Cookie;
 }
 
 #download{
   cursor: pointer;
   margin-left: 30%;
+}
+
+table.table-hover tbody tr td:hover {
+  background-color: grey; 
 }

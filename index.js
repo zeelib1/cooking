@@ -25,7 +25,7 @@ function shareBowl(){
 
 
 
-//specific size
+//specific size - lasage
 
 
 var mediaQuery = window.matchMedia("(max-width: 839px)");
@@ -63,21 +63,48 @@ var mediaQuery = window.matchMedia("(max-width: 839px)");
       var chopItImage = document.getElementById('saying');
       chopItImage.style.display = 'none';
       lasangeSidebar.style.display = 'none';
-
     })
-
-
-
   }
+
   mediaQuery = window.matchMedia("(max-width: 629px");
   if (mediaQuery.matches) {
     var showingRecipeMediaQuery = document.getElementById('lasagne');
     showingRecipeMediaQuery.style = "margin-top:800px; margin-right:-4em; margin-left:-4em";
+  }
 
 
+//specific size - bowl
 
+  if(mediaQuery.matches){
+    var bowlSidebar = document.getElementById('bowl-sidebar');
+    bowlSidebar.addEventListener('click', function() {
+      var recipeGrid= document.getElementById('recipe-responsive-grid');
+      var recipeMain = document.getElementById('recipe-main-id');
 
+      recipeMain.appendChild(recipeGrid);
 
+      recipeGrid.style = "margin-top:-22em; margin-left:-5em;";
+      var cardContainer = document.getElementByClass('card-container');
+      cardContainer.forEach((item, i) => {
+        item.style = "margin-right: 1em";
+      });
+    })
 
+    var showingRecipe = document.getElementById('bowl');
+    showingRecipe.style = "margin-right:-4em; margin-left:-4em";
+  }
 
+  mediaQuery = window.matchMedia("(max-width: 793px");
+  if (mediaQuery.matches) {
+    bowlSidebar.addEventListener('click', () => {
+      var chopItImage = document.getElementById('saying');
+      chopItImage.style.display = 'none';
+      bowlSidebar.style.display = 'none';
+    })
+  }
+
+  mediaQuery = window.matchMedia("(max-width: 629px");
+  if (mediaQuery.matches) {
+    var showingRecipeMediaQuery = document.getElementById('bowl');
+    showingRecipeMediaQuery.style = "margin-top:800px; margin-right:-4em; margin-left:-4em";
   }
