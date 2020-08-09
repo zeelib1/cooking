@@ -46,7 +46,7 @@ var mediaQuery = window.matchMedia("(max-width: 839px)");
       recipeGrid.style = "margin-top:-22em; margin-left:-5em";
       var tableWrapperTwo = document.getElementById('table-wrapper-two');
 
-      tableWrapperTwo.style = "display:block; margin-top:47em";
+      tableWrapperTwo.style = "display:block; margin-top:49em";
 
 
       var cardContainer = document.getElementByClass('card-container');
@@ -72,11 +72,23 @@ var mediaQuery = window.matchMedia("(max-width: 839px)");
       var chopItImage = document.getElementById('saying');
       chopItImage.style.display = 'none';
       lasangeSidebar.style.display = 'none';
+      var tableWrapperTwo = document.getElementById('table-wrapper-two');
+      var tableWrapperOne = document.getElementById('table-wrapper');
+      tableWrapperOne.style.display = 'none';
+      tableWrapperTwo.style = "display:block; margin-top:47em";
     })
   }
 
   mediaQuery = window.matchMedia("(max-width: 629px");
   if (mediaQuery.matches) {
+      var tableWrapperOne = document.getElementById('table-wrapper');
+    tableWrapperOne.style.display = 'none';
+    lasangeSidebar.addEventListener('click', () => {
+      var tableWrapperTwo = document.getElementById('table-wrapper-two');
+      var tableWrapperOne = document.getElementById('table-wrapper');
+
+      tableWrapperTwo.style = "display:block; margin-top:51em";
+    })
     var showingRecipeMediaQuery = document.getElementById('lasagne');
     showingRecipeMediaQuery.style = "margin-top:800px; margin-right:-4em; margin-left:-4em";
   }
