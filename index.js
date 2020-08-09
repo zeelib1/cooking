@@ -43,7 +43,12 @@ var mediaQuery = window.matchMedia("(max-width: 839px)");
       recipeMain.appendChild(recipeGrid);
 
 
-      recipeGrid.style = "margin-top:-22em; margin-left:-5em;";
+      recipeGrid.style = "margin-top:-22em; margin-left:-5em";
+      var tableWrapperTwo = document.getElementById('table-wrapper-two');
+
+      tableWrapperTwo.style = "display:block; margin-top:47em";
+
+
       var cardContainer = document.getElementByClass('card-container');
       cardContainer.forEach((item, i) => {
         item.style = "margin-right: 1em";
