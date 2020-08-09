@@ -502,10 +502,14 @@ h5 {
   display: none;
 }
 
+#table-wrapper-two {
+  display: none;
+}
+
 .table-container {
   display: flex;
   margin-left: 10em;
-} 
+}
 
 /* @media(max-width:995px) {
   .table-container {
