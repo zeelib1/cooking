@@ -7,7 +7,8 @@ lasagneRecipe.addEventListener('click', function(){
   firstMenu.style.display = "none";
   bowl.style.display = 'none';
   var zeeTable = document.getElementById('table-wrapper-two');
-  zeeTable.style.display = 'block';
+  zeeTable.style = 'display:block; margin-top:5em';
+
 
 
 })
@@ -35,6 +36,24 @@ function shareBowl(){
 var mediaQuery = window.matchMedia("(max-width: 839px)");
 
   if(mediaQuery.matches){
+    // #######Natascha############################################################################################
+    var sidebarTag = document.getElementsByTagName('sidebar')[0];
+    var bowlRecipe = document.getElementById ('bowl-sidebar');
+    var bowl = document.getElementById('bowl');
+    var ingBowl = document.getElementById('table-wrapper');
+    bowlRecipe.addEventListener('click', function(){
+      sidebarTag.style.display = "none";
+      var nataschaWrapperTable = document.getElementById('table-wrapper');
+
+      nataschaWrapperTable.style = "margin-top:29em; display:block";
+      // tableWrapperOne.style = "margin-top:3em";
+
+
+
+    })
+
+    // #####ending Natacha
+
     var lasangeSidebar = document.getElementById('lasagne-sidebar');
     lasangeSidebar.addEventListener('click', function() {
       var recipeGrid= document.getElementById('recipe-responsive-grid');
@@ -91,13 +110,23 @@ var mediaQuery = window.matchMedia("(max-width: 839px)");
     })
     var showingRecipeMediaQuery = document.getElementById('lasagne');
     showingRecipeMediaQuery.style = "margin-top:800px; margin-right:-4em; margin-left:-4em";
+
+
+    // ########NAtacasc
+
+    bowlRecipe.addEventListener('click', function(){
+      sidebarTag.style.display = "none";
+      var nataschaWrapperTable = document.getElementById('table-wrapper');
+
+      nataschaWrapperTable.style = "margin-top:33em; display:block";
+    })
   }
 
 
 //specific size - bowl
 
   if(mediaQuery.matches){
-    var bowlSidebar = document.getElementById('bowl-sidebar');
+    var bowlSidebar = document.getElementById('bowl-sidebar');ha
     bowlSidebar.addEventListener('click', function() {
       var recipeGrid= document.getElementById('recipe-responsive-grid');
       var recipeMain = document.getElementById('recipe-main-id');
