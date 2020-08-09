@@ -123,6 +123,15 @@ header {
       align-items: center;
 
     }
+    #table-all-width {
+      width:100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-family: Cookie;
+      overflow-x: hidden;
+    }
 
     .showing-recipe #lasange {
       /* margin-top: 10em; */
@@ -563,7 +572,7 @@ tr i {
 }
 
 table.table-hover tbody tr td:hover {
-  background-color: grey; 
+  background-color: grey;
 }
 
 @media
