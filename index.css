@@ -505,7 +505,6 @@ h5 {
 .table-container {
   display: flex;
   margin-left: 10em;
-  margin-right: 10em;
 } 
 
 /* @media(max-width:995px) {
@@ -517,6 +516,7 @@ h5 {
 
 .table-all {
   display: flex;
+  width: 60%;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -560,4 +560,28 @@ tr i {
 
 table.table-hover tbody tr td:hover {
   background-color: grey; 
+}
+
+@media
+only screen and (max-width: 760px), (min-device-width: 768px) and (max-device-width: 1024px){
+  #table-wrapper, .table-content, table, thead, tbody, th, td, tr {
+    display: block;
+    width: 6em;
+  }
+
+  thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+
+  td {
+    position: relative;
+    padding-left: 50%;
+    width: 8.2em;
+  }
+
+  #ingredients {
+    margin: 0 auto;
+  }
 }
