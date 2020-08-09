@@ -118,7 +118,7 @@ var mediaQuery = window.matchMedia("(max-width: 839px)");
       sidebarTag.style.display = "none";
       var nataschaWrapperTable = document.getElementById('table-wrapper');
 
-      nataschaWrapperTable.style = "margin-top:33em; display:block";
+      nataschaWrapperTable.style = "margin-top:38em; display:block";
     })
   }
 
