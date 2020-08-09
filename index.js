@@ -106,7 +106,10 @@ var mediaQuery = window.matchMedia("(max-width: 839px)");
       var tableWrapperTwo = document.getElementById('table-wrapper-two');
       var tableWrapperOne = document.getElementById('table-wrapper');
 
-      tableWrapperTwo.style = "display:block; margin-top:51em";
+      tableWrapperTwo.style = "display:block; margin-top:55em";
+      var tableAll = document.getElementByClass('table-all')[1];
+      tableAll.classList.remove('table-all');
+
     })
     var showingRecipeMediaQuery = document.getElementById('lasagne');
     showingRecipeMediaQuery.style = "margin-top:800px; margin-right:-4em; margin-left:-4em";
