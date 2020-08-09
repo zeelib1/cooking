@@ -1,18 +1,29 @@
 
-
-
-
 var lasagneRecipe = document.getElementById ('lasagne-sidebar');
 var lasagne = document.getElementById('lasagne');
 var firstMenu = document.getElementById("firstMenu");
 lasagneRecipe.addEventListener('click', function(){
   lasagne.style.display = 'block';
   firstMenu.style.display = "none";
-
-
-
-
+  bowl.style.display = 'none';
 })
+
+
+var bowlRecipe = document.getElementById ('bowl-sidebar');
+var bowl = document.getElementById('bowl');
+var ingBowl = document.getElementById('full-table-bowl')
+bowlRecipe.addEventListener('click', function(){
+  bowl.style.display = 'block';
+  firstMenu.style.display = "none";
+  lasagne.style.display = "none";
+  ingBowl.style.display = "block";
+})
+
+function shareBowl(){
+  window.alert("Thx for spreading happiness!" + " " + "Use: " + document.URL);
+}
+
+
 
 //specific size
 
