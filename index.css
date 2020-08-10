@@ -352,10 +352,6 @@ main {
   background-color: lightgray;
 }
 
-
-
-/*begin of sidebar css*/
-
 .recipe-sidebar {
   width: 230px;
   display: flex;
@@ -418,7 +414,82 @@ h5 {
   margin-top: -40px;
 }
 
-/*end of sidebar css*/
+/*begin of sidebar css
+
+.recipe-sidebar {
+  width: 230px;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-container {
+  background-color: #43b46e;
+  width: 200px;
+  height: 300px;
+<<<<<<< HEAD
+=======
+  width: 90%;
+  min-height: 550px;
+>>>>>>> e698b389c8e12ed329418859c3ed953629536434
+  border-radius: 1em;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+  margin: 2.5em;
+  transition: 0.3s;
+  transform: scale(1);
+  display: flex;
+  flex-direction: column;
+
+}
+
+.card-container:hover {
+  transition: 0.3s;
+  transform: scale(1.13);
+}
+
+.card-dish-picture {
+  height: 70%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-dish-picture img {
+<<<<<<< HEAD
+  max-width: auto;
+  max-height: 100%;
+=======
+  flex-shrink: 0;
+  width: 100%;
+  height: 100%;
+>>>>>>> e698b389c8e12ed329418859c3ed953629536434
+  object-fit: cover;
+  border-top-left-radius: 1em;
+  border-top-right-radius: 1em;
+
+}
+
+.card-profile-picture {
+  display: flex;
+  justify-content: center;
+  height: 30%;
+  width: auto;
+  width: 100%;
+}
+
+.card-info h4,
+h5 {
+  text-align: center;
+}
+
+.card-profile-picture img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+  margin-top: -40px;
+}
+
+end of sidebar css*/
 
 /*.recipe-site {
   display: flex;
